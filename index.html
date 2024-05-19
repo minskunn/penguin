@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>penguins 🐧</title>
+    <style>
+      body {
+        background: #f3edfd;
+      }
+      h1 {
+        text-align: center;
+        font-size: 22px;
+        font-family: monospace;
+      }
+      h2 {
+        text-align: center;
+        font-size: 17px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0%;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto;
+      }
+      li {
+        border: 1px solid;
+        margin: 10px 0;
+        padding: 15px;
+        border-radius: 5px;
+        font-family: monospace;
+        font-size: 18px;
+        opacity: 0.8;
+        font-weight: lighter;
+      }
+      li:hover {
+        transition: all 200ms ease-in-out;
+        background-color: antiquewhite;
+        margin: 0 auto;
+        max-width: 600px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        height: auto;
+      }
+      p {
+        font-size: 12px;
+        opacity: 0.7;
+        text-align: center;
+        font-family: monospace;
+        padding-top: 25px;
+      }
+      button {
+        border-radius: 30px;
+        margin: 0 auto;
+        display: block;
+        background-color: antiquewhite;
+        border: 1px solid black;
+        color: black;
+        font-size: 15px;
+        font-weight: lighter;
+        line-height: 20px;
+        padding: 16px 24px;
+        box-shadow: 2px 2px 4px;
+        transition: all 200ms ease;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: white;
+      }
+      img:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Penguin <br />
+      -the cutest animal on planet Earth
+    </h1>
+    <em>
+      <h2>Quick facts to prove it</h2>
+    </em>
+    <hr />
+    <div>
+      <ul>
+        <li>Penguins often greet each other by touching or bumping bellies.</li>
+        <li>
+          Sporting a natural tuxedo, their black and white appearance serves as
+          a camouflage while swimming and makes them look like they're always
+          ready for a fancy party.
+        </li>
+        <li>
+          Penguins enjoy a good belly slide. Not only is it fun but helps them
+          to travel more efficiently.
+        </li>
+        <li>
+          As a part of courtship and bonding rituals, some penguins engage in
+          dance-offs. They perform playful moves that showcase their unique
+          personalities.
+        </li>
+        <li>
+          Penguins are famous for forming monogamous pairs that can last for a
+          lifetime 💕
+        </li>
+      </ul>
+    </div>
+    <span>
+      <img
+        src="https://www.creativefabrica.com/wp-content/uploads/2023/01/17/Cute-Baby-Penguin-Kawaii-Graphic-57987223-1.png"
+        alt="pingu"
+        width="250"
+      />
+    </span>
+    <a
+      href="https://www.hurtigruten.com/en/expeditions/destinations/antarctica-cruises/"
+      target="_blank"
+    >
+      <button>Not convinced yet?</button>
+    </a>
+    <strong>
+      <p>This page was coded by Minna K</p>
+    </strong>
+    <script>
+      let favouriteAnimal = prompt("What is the cutest animal?");
+
+      if (
+        favouriteAnimal &&
+        favouriteAnimal.trim().toLocaleLowerCase() === "penguin"
+      ) {
+        alert("yay");
+      } else {
+        alert("not wrong but not entirely right");
+      }
+
+      function sayHi() {
+        alert("hi");
+      }
+      let animalImage = document.querySelector("img");
+      animalImage.addEventListener("click", sayHi);
+    </script>
+  </body>
+</html>
